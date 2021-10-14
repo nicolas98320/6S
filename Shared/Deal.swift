@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct Deal: Identifiable {
-    var id = UUID()
+struct Deal: Identifiable, Hashable {
+    var id: String { description }
     var name: String
     var description: String
     var image: String
