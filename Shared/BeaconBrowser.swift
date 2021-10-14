@@ -5,21 +5,34 @@
 //  Created by Ukko on 14/10/21.
 //
 
+import CloudKit
+import Combine
 import CoreBluetooth
 import CoreLocation
 import SwiftUI
 
 class BeaconBrowser: NSObject, CLLocationManagerDelegate, ObservableObject {
     
-    @Published var proximity: Beacon.Proximity? = nil
+    @Published var proximity: Beacon.Proximity = .unknown
+    @Published var hasRedeemed: Bool = false
     
+    private var cancellables: Set<AnyCancellable> = []
     private let locationManager = CLLocationManager()
+    
     
     override init() {
         super.init()
         locationManager.delegate = self
+        $proximity.debounce(for: 1.0, scheduler: RunLoop.main)
+            .removeDuplicates()
+            .compactMap { $0 }
+            .filter { $0 == .close || $0 == .veryClose }
+            .receive(on: RunLoop.main)
+            .sink { _ in
+                sendNotification()
+                self.stopMonitoringBeacons()
+            }.store(in: &cancellables)
     }
-
     
     func startBrowsing() {
         locationManager.requestWhenInUseAuthorization()
@@ -35,7 +48,7 @@ class BeaconBrowser: NSObject, CLLocationManagerDelegate, ObservableObject {
             case .far:
                 proximity = .far
             default:
-                proximity = nil
+                proximity = .unknown
             }
         }
     }
@@ -55,11 +68,15 @@ class BeaconBrowser: NSObject, CLLocationManagerDelegate, ObservableObject {
         }
     }
     
+    private let beaconIdentity = CLBeaconIdentityConstraint(uuid: Beacon.id, major: Beacon.major, minor: Beacon.minor)
+    
+    private func stopMonitoringBeacons() {
+        locationManager.stopRangingBeacons(satisfying: beaconIdentity)
+    }
+    
     private func monitorBeacons() {
         if CLLocationManager.isMonitoringAvailable(for: CLBeaconRegion.self) {
-            locationManager.startRangingBeacons(
-                satisfying: .init(uuid: Beacon.id, major: Beacon.major, minor: Beacon.minor)
-            )
+            locationManager.startRangingBeacons(satisfying: beaconIdentity)
         }
     }
 }

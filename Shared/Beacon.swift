@@ -14,10 +14,11 @@ enum Beacon {
     static let minor: CLBeaconMajorValue = 1
     static let beaconID = "com.ace6s.advertiserRegion"
     
-    enum Proximity {
-        case far
-        case close
-        case veryClose
+    enum Proximity: String {
+        case far = "Far"
+        case close = "Close"
+        case veryClose = "Very close"
+        case unknown = "Unknown"
     }
 }
 

@@ -32,6 +32,8 @@
 		7AC6CFAD2717FE3B00B4000B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CFAC2717FE3B00B4000B /* ContentView.swift */; };
 		7AC6CFAE2718069A00B4000B /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CF8CE2717F23F00B178AE /* Deal.swift */; };
 		7AC6CFAF2718069C00B4000B /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CF8CE2717F23F00B178AE /* Deal.swift */; };
+		7AD16C9927184AFE008E8FD5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD16C9827184AFE008E8FD5 /* CloudKit.framework */; };
+		7AD16C9D271852A9008E8FD5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD16C9C271852A9008E8FD5 /* CloudKit.framework */; };
 		844CF8CF2717F24000B178AE /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CF8CE2717F23F00B178AE /* Deal.swift */; };
 		844CF8D32717F42900B178AE /* DealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CF8D22717F42900B178AE /* DealDetail.swift */; };
 /* End PBXBuildFile section */
@@ -83,6 +85,11 @@
 		7AC6CFA72717EB5F00B4000B /* -S--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-S--iOS--Info.plist"; sourceTree = "<group>"; };
 		7AC6CFA82717F9FE00B4000B /* Beacon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
 		7AC6CFAC2717FE3B00B4000B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7AD16C9627184AEC008E8FD5 /* 6S (tvOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "6S (tvOS).entitlements"; sourceTree = "<group>"; };
+		7AD16C9827184AFE008E8FD5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		7AD16C9A27184B1E008E8FD5 /* -S--tvOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-S--tvOS--Info.plist"; sourceTree = "<group>"; };
+		7AD16C9B271852A2008E8FD5 /* 6S (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "6S (iOS).entitlements"; sourceTree = "<group>"; };
+		7AD16C9C271852A9008E8FD5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		844CF8CE2717F23F00B178AE /* Deal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
 		844CF8D22717F42900B178AE /* DealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AD16C9D271852A9008E8FD5 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AD16C9927184AFE008E8FD5 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +145,9 @@
 		7AC6CEDF2717C5B500B4000B = {
 			isa = PBXGroup;
 			children = (
+				7AD16C9B271852A2008E8FD5 /* 6S (iOS).entitlements */,
+				7AD16C9A27184B1E008E8FD5 /* -S--tvOS--Info.plist */,
+				7AD16C9627184AEC008E8FD5 /* 6S (tvOS).entitlements */,
 				7AC6CFA72717EB5F00B4000B /* -S--iOS--Info.plist */,
 				7AC6CEE42717C5B600B4000B /* Shared */,
 				7AC6CEF32717C5B700B4000B /* macOS */,
@@ -144,6 +156,7 @@
 				7AC6CF572717D93200B4000B /* tvOS */,
 				7AC6CF682717D93300B4000B /* 6STests */,
 				7AC6CEED2717C5B700B4000B /* Products */,
+				7AD16C9727184AFE008E8FD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,6 +238,15 @@
 				7AC6CF692717D93300B4000B /* _STests.swift */,
 			);
 			path = 6STests;
+			sourceTree = "<group>";
+		};
+		7AD16C9727184AFE008E8FD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AD16C9C271852A9008E8FD5 /* CloudKit.framework */,
+				7AD16C9827184AFE008E8FD5 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -643,9 +665,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "6S (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = DWMRLXVJ59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "-S--iOS--Info.plist";
@@ -657,7 +680,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -677,9 +700,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "6S (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = DWMRLXVJ59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "-S--iOS--Info.plist";
@@ -691,7 +715,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -861,11 +885,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "6S (tvOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = DWMRLXVJ59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-S--tvOS--Info.plist";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Used to transform tvOS into a beacon";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
@@ -889,11 +915,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "6S (tvOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = DWMRLXVJ59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-S--tvOS--Info.plist";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Used to transform tvOS into a beacon";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;

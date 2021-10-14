@@ -8,6 +8,7 @@ import UserNotifications
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var router: Router
     @ObservedObject var browser = BeaconBrowser()
 
     var deals: [Deal] = Deal.testData
@@ -15,12 +16,20 @@ struct ContentView: View {
     var body: some View {
 #if os(iOS)
         NavigationView {
-            List(deals) { deal in
-                DealCell(deal: deal)
+            List(router.deals) { deal in
+                NavigationLink(destination: DealDetail(), tag: deal, selection: $router.selectedDeal) {
+                    Image(deal.image)
+                        .resizable()
+                        .frame(width: 80, height: 80)
+                        .cornerRadius(40)
+                    VStack(alignment: .leading) {
+                        Text(deal.name).font(.body)
+                    }
+                }
             }
             .navigationBarTitle(Text("Staff deals"))
-            .onAppear {
-                sendNotification()
+            .sheet(isPresented: $router.hasRedeemed) {
+                Text("You've redeemed this offer! Yay!")
             }
         }
 #else
@@ -46,20 +55,6 @@ func sendNotification() {
     UNUserNotificationCenter.current().add(request)
 }
 
-struct DealCell : View {
-    let deal: Deal
-    var body: some View {
-        return NavigationLink(destination: DealDetail(name: deal.name, description: deal.description, image: deal.image)) {
-            Image(deal.image)
-                .resizable()
-                .frame(width: 80, height: 80)
-                .cornerRadius(40)
-            VStack(alignment: .leading) {
-                Text(deal.name).font(.body)
-            }
-        }
-    }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
