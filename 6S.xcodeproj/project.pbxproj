@@ -17,6 +17,11 @@
 		7AC6CF102717C5B800B4000B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CEE62717C5B600B4000B /* ContentView.swift */; };
 		7AC6CF112717C5B800B4000B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6CEE72717C5B700B4000B /* Assets.xcassets */; };
 		7AC6CF122717C5B800B4000B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6CEE72717C5B700B4000B /* Assets.xcassets */; };
+		7AC6CF5D2717D93300B4000B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6CF5C2717D93300B4000B /* Assets.xcassets */; };
+		7AC6CF602717D93300B4000B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6CF5F2717D93300B4000B /* Preview Assets.xcassets */; };
+		7AC6CF6A2717D93300B4000B /* _STests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CF692717D93300B4000B /* _STests.swift */; };
+		7AC6CF802717D9A400B4000B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CEE62717C5B600B4000B /* ContentView.swift */; };
+		7AC6CF812717D9BA00B4000B /* _SApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CEE52717C5B600B4000B /* _SApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,13 @@
 			remoteGlobalIDString = 7AC6CEF12717C5B700B4000B;
 			remoteInfo = "6S (macOS)";
 		};
+		7AC6CF662717D93300B4000B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AC6CEE02717C5B500B4000B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AC6CF552717D93200B4000B;
+			remoteInfo = 6S;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +61,11 @@
 		7AC6CF052717C5B700B4000B /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC6CF092717C5B700B4000B /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		7AC6CF0B2717C5B700B4000B /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		7AC6CF562717D93200B4000B /* 6S (tvOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "6S (tvOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AC6CF5C2717D93300B4000B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AC6CF5F2717D93300B4000B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7AC6CF652717D93300B4000B /* 6STests tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "6STests tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AC6CF692717D93300B4000B /* _STests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _STests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +97,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7AC6CF532717D93200B4000B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AC6CF622717D93300B4000B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,6 +121,8 @@
 				7AC6CEF32717C5B700B4000B /* macOS */,
 				7AC6CEFC2717C5B700B4000B /* Tests iOS */,
 				7AC6CF082717C5B700B4000B /* Tests macOS */,
+				7AC6CF572717D93200B4000B /* tvOS */,
+				7AC6CF682717D93300B4000B /* 6STests */,
 				7AC6CEED2717C5B700B4000B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,6 +144,8 @@
 				7AC6CEF22717C5B700B4000B /* 6S.app */,
 				7AC6CEF92717C5B700B4000B /* Tests iOS.xctest */,
 				7AC6CF052717C5B700B4000B /* Tests macOS.xctest */,
+				7AC6CF562717D93200B4000B /* 6S (tvOS).app */,
+				7AC6CF652717D93300B4000B /* 6STests tvOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +174,31 @@
 				7AC6CF0B2717C5B700B4000B /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		7AC6CF572717D93200B4000B /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				7AC6CF5C2717D93300B4000B /* Assets.xcassets */,
+				7AC6CF5E2717D93300B4000B /* Preview Content */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		7AC6CF5E2717D93300B4000B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7AC6CF5F2717D93300B4000B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7AC6CF682717D93300B4000B /* 6STests */ = {
+			isa = PBXGroup;
+			children = (
+				7AC6CF692717D93300B4000B /* _STests.swift */,
+			);
+			path = 6STests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +274,41 @@
 			productReference = 7AC6CF052717C5B700B4000B /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7AC6CF552717D93200B4000B /* 6S (tvOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AC6CF772717D93300B4000B /* Build configuration list for PBXNativeTarget "6S (tvOS)" */;
+			buildPhases = (
+				7AC6CF522717D93200B4000B /* Sources */,
+				7AC6CF532717D93200B4000B /* Frameworks */,
+				7AC6CF542717D93200B4000B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "6S (tvOS)";
+			productName = 6S;
+			productReference = 7AC6CF562717D93200B4000B /* 6S (tvOS).app */;
+			productType = "com.apple.product-type.application";
+		};
+		7AC6CF642717D93300B4000B /* 6STests tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AC6CF7A2717D93300B4000B /* Build configuration list for PBXNativeTarget "6STests tvOS" */;
+			buildPhases = (
+				7AC6CF612717D93300B4000B /* Sources */,
+				7AC6CF622717D93300B4000B /* Frameworks */,
+				7AC6CF632717D93300B4000B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AC6CF672717D93300B4000B /* PBXTargetDependency */,
+			);
+			name = "6STests tvOS";
+			productName = 6STests;
+			productReference = 7AC6CF652717D93300B4000B /* 6STests tvOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -238,6 +333,13 @@
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 7AC6CEF12717C5B700B4000B;
 					};
+					7AC6CF552717D93200B4000B = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					7AC6CF642717D93300B4000B = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 7AC6CF552717D93200B4000B;
+					};
 				};
 			};
 			buildConfigurationList = 7AC6CEE32717C5B500B4000B /* Build configuration list for PBXProject "6S" */;
@@ -257,6 +359,8 @@
 				7AC6CEF12717C5B700B4000B /* 6S (macOS) */,
 				7AC6CEF82717C5B700B4000B /* Tests iOS */,
 				7AC6CF042717C5B700B4000B /* Tests macOS */,
+				7AC6CF552717D93200B4000B /* 6S (tvOS) */,
+				7AC6CF642717D93300B4000B /* 6STests tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -286,6 +390,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7AC6CF032717C5B700B4000B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AC6CF542717D93200B4000B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AC6CF602717D93300B4000B /* Preview Assets.xcassets in Resources */,
+				7AC6CF5D2717D93300B4000B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AC6CF632717D93300B4000B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,6 +451,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7AC6CF522717D93200B4000B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AC6CF802717D9A400B4000B /* ContentView.swift in Sources */,
+				7AC6CF812717D9BA00B4000B /* _SApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AC6CF612717D93300B4000B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AC6CF6A2717D93300B4000B /* _STests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -343,6 +480,11 @@
 			isa = PBXTargetDependency;
 			target = 7AC6CEF12717C5B700B4000B /* 6S (macOS) */;
 			targetProxy = 7AC6CF062717C5B700B4000B /* PBXContainerItemProxy */;
+		};
+		7AC6CF672717D93300B4000B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AC6CF552717D93200B4000B /* 6S (tvOS) */;
+			targetProxy = 7AC6CF662717D93300B4000B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -666,6 +808,112 @@
 			};
 			name = Release;
 		};
+		7AC6CF782717D93300B4000B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ace.6s.-S";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Debug;
+		};
+		7AC6CF792717D93300B4000B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ace.6s.-S";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AC6CF7B2717D93300B4000B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ace.6s.-STests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/6S.app/6S";
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Debug;
+		};
+		7AC6CF7C2717D93300B4000B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ace.6s.-STests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/6S.app/6S";
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -710,6 +958,24 @@
 			buildConfigurations = (
 				7AC6CF1F2717C5B800B4000B /* Debug */,
 				7AC6CF202717C5B800B4000B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AC6CF772717D93300B4000B /* Build configuration list for PBXNativeTarget "6S (tvOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AC6CF782717D93300B4000B /* Debug */,
+				7AC6CF792717D93300B4000B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AC6CF7A2717D93300B4000B /* Build configuration list for PBXNativeTarget "6STests tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AC6CF7B2717D93300B4000B /* Debug */,
+				7AC6CF7C2717D93300B4000B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
