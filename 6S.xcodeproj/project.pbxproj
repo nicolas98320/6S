@@ -20,8 +20,16 @@
 		7AC6CF5D2717D93300B4000B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6CF5C2717D93300B4000B /* Assets.xcassets */; };
 		7AC6CF602717D93300B4000B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6CF5F2717D93300B4000B /* Preview Assets.xcassets */; };
 		7AC6CF6A2717D93300B4000B /* _STests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CF692717D93300B4000B /* _STests.swift */; };
-		7AC6CF802717D9A400B4000B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CEE62717C5B600B4000B /* ContentView.swift */; };
 		7AC6CF812717D9BA00B4000B /* _SApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CEE52717C5B600B4000B /* _SApp.swift */; };
+		7AC6CF832717DB5F00B4000B /* BeaconAdvertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CF822717DB5F00B4000B /* BeaconAdvertiser.swift */; };
+		7AC6CF842717DB5F00B4000B /* BeaconAdvertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CF822717DB5F00B4000B /* BeaconAdvertiser.swift */; };
+		7AC6CFA22717E8F500B4000B /* BeaconAdvertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CF822717DB5F00B4000B /* BeaconAdvertiser.swift */; };
+		7AC6CFA42717EA8C00B4000B /* BeaconBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CFA32717EA8C00B4000B /* BeaconBrowser.swift */; };
+		7AC6CFA52717EA8C00B4000B /* BeaconBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CFA32717EA8C00B4000B /* BeaconBrowser.swift */; };
+		7AC6CFA92717F9FE00B4000B /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CFA82717F9FE00B4000B /* Beacon.swift */; };
+		7AC6CFAA2717F9FE00B4000B /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CFA82717F9FE00B4000B /* Beacon.swift */; };
+		7AC6CFAB2717F9FE00B4000B /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CFA82717F9FE00B4000B /* Beacon.swift */; };
+		7AC6CFAD2717FE3B00B4000B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CFAC2717FE3B00B4000B /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +74,11 @@
 		7AC6CF5F2717D93300B4000B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7AC6CF652717D93300B4000B /* 6STests tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "6STests tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC6CF692717D93300B4000B /* _STests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _STests.swift; sourceTree = "<group>"; };
+		7AC6CF822717DB5F00B4000B /* BeaconAdvertiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconAdvertiser.swift; sourceTree = "<group>"; };
+		7AC6CFA32717EA8C00B4000B /* BeaconBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconBrowser.swift; sourceTree = "<group>"; };
+		7AC6CFA72717EB5F00B4000B /* -S--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-S--iOS--Info.plist"; sourceTree = "<group>"; };
+		7AC6CFA82717F9FE00B4000B /* Beacon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
+		7AC6CFAC2717FE3B00B4000B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +130,7 @@
 		7AC6CEDF2717C5B500B4000B = {
 			isa = PBXGroup;
 			children = (
+				7AC6CFA72717EB5F00B4000B /* -S--iOS--Info.plist */,
 				7AC6CEE42717C5B600B4000B /* Shared */,
 				7AC6CEF32717C5B700B4000B /* macOS */,
 				7AC6CEFC2717C5B700B4000B /* Tests iOS */,
@@ -132,6 +146,9 @@
 			children = (
 				7AC6CEE52717C5B600B4000B /* _SApp.swift */,
 				7AC6CEE62717C5B600B4000B /* ContentView.swift */,
+				7AC6CFA82717F9FE00B4000B /* Beacon.swift */,
+				7AC6CFA32717EA8C00B4000B /* BeaconBrowser.swift */,
+				7AC6CF822717DB5F00B4000B /* BeaconAdvertiser.swift */,
 				7AC6CEE72717C5B700B4000B /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -180,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				7AC6CF5C2717D93300B4000B /* Assets.xcassets */,
+				7AC6CFAC2717FE3B00B4000B /* ContentView.swift */,
 				7AC6CF5E2717D93300B4000B /* Preview Content */,
 			);
 			path = tvOS;
@@ -419,7 +437,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AC6CF832717DB5F00B4000B /* BeaconAdvertiser.swift in Sources */,
 				7AC6CF0F2717C5B800B4000B /* ContentView.swift in Sources */,
+				7AC6CFA92717F9FE00B4000B /* Beacon.swift in Sources */,
+				7AC6CFA42717EA8C00B4000B /* BeaconBrowser.swift in Sources */,
 				7AC6CF0D2717C5B800B4000B /* _SApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,7 +449,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AC6CF842717DB5F00B4000B /* BeaconAdvertiser.swift in Sources */,
 				7AC6CF102717C5B800B4000B /* ContentView.swift in Sources */,
+				7AC6CFAA2717F9FE00B4000B /* Beacon.swift in Sources */,
+				7AC6CFA52717EA8C00B4000B /* BeaconBrowser.swift in Sources */,
 				7AC6CF0E2717C5B800B4000B /* _SApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,8 +479,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC6CF802717D9A400B4000B /* ContentView.swift in Sources */,
+				7AC6CFA22717E8F500B4000B /* BeaconAdvertiser.swift in Sources */,
+				7AC6CFAD2717FE3B00B4000B /* ContentView.swift in Sources */,
 				7AC6CF812717D9BA00B4000B /* _SApp.swift in Sources */,
+				7AC6CFAB2717F9FE00B4000B /* Beacon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,8 +633,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-S--iOS--Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "To listen to beacons";
+				INFOPLIST_KEY_NSLocationUsageDescription = "To monitor beacons";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To monitor beacons";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -636,8 +667,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-S--iOS--Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "To listen to beacons";
+				INFOPLIST_KEY_NSLocationUsageDescription = "To monitor beacons";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To monitor beacons";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -818,6 +854,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Used to transform tvOS into a beacon";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -845,6 +882,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Used to transform tvOS into a beacon";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (

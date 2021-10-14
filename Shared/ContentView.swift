@@ -8,7 +8,10 @@ import UserNotifications
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var browser = BeaconBrowser()
+
     var body: some View {
+        #if os(iOS)
         VStack {
             Button("Request Permission") {
                 UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
@@ -35,7 +38,11 @@ struct ContentView: View {
                 // add our notification request
                 UNUserNotificationCenter.current().add(request)
             }
-        }
+    }
+    #else
+        Text("Hello World")
+            .padding()
+    #endif
     }
 }
 
