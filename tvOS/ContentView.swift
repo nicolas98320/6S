@@ -11,9 +11,7 @@ struct ContentView: View {
     var advertiser = BeaconAdvertiser()
     
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-            .onAppear(perform: start)
+        Image("tvOS").resizable()
     }
     
     func start() {
