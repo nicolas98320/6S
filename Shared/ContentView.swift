@@ -10,39 +10,54 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var browser = BeaconBrowser()
 
+    var deals: [Deal] = Deal.testData
+    
     var body: some View {
-        #if os(iOS)
-        VStack {
-            Button("Request Permission") {
-                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
-                    if success {
-                        print("All set!")
-                    } else if let error = error {
-                        print(error.localizedDescription)
-                    }
-                }
+#if os(iOS)
+        NavigationView {
+            List(deals) { deal in
+                DealCell(deal: deal)
             }
-
-            Button("Schedule Notification") {
-                let content = UNMutableNotificationContent()
-                content.title = "Deal of the day!"
-                content.subtitle = "Buy one coffee get one free"
-                content.sound = UNNotificationSound.default
-
-                // show this notification five seconds from now
-                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-
-                // choose a random identifier
-                let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-
-                // add our notification request
-                UNUserNotificationCenter.current().add(request)
+            .navigationBarTitle(Text("Staff deals"))
+            .onAppear {
+                sendNotification()
             }
+        }
+#else
+    Text("Hello World")
+        .padding()
+#endif
     }
-    #else
-        Text("Hello World")
-            .padding()
-    #endif
+}
+
+func sendNotification() {
+    let content = UNMutableNotificationContent()
+    content.title = "Deal of the day!"
+    content.subtitle = "Buy one coffee get one free"
+    content.sound = UNNotificationSound.default
+
+    // show this notification five seconds from now
+    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+
+    // choose a random identifier
+    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+
+    // add our notification request
+    UNUserNotificationCenter.current().add(request)
+}
+
+struct DealCell : View {
+    let deal: Deal
+    var body: some View {
+        return NavigationLink(destination: DealDetail(name: deal.name, description: deal.description, image: deal.image)) {
+            Image(deal.image)
+                .resizable()
+                .frame(width: 80, height: 80)
+                .cornerRadius(40)
+            VStack(alignment: .leading) {
+                Text(deal.name)
+            }
+        }
     }
 }
 

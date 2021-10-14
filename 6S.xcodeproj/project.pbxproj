@@ -30,6 +30,8 @@
 		7AC6CFAA2717F9FE00B4000B /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CFA82717F9FE00B4000B /* Beacon.swift */; };
 		7AC6CFAB2717F9FE00B4000B /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CFA82717F9FE00B4000B /* Beacon.swift */; };
 		7AC6CFAD2717FE3B00B4000B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CFAC2717FE3B00B4000B /* ContentView.swift */; };
+		844CF8CF2717F24000B178AE /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CF8CE2717F23F00B178AE /* Deal.swift */; };
+		844CF8D32717F42900B178AE /* DealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CF8D22717F42900B178AE /* DealDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		7AC6CFA72717EB5F00B4000B /* -S--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-S--iOS--Info.plist"; sourceTree = "<group>"; };
 		7AC6CFA82717F9FE00B4000B /* Beacon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
 		7AC6CFAC2717FE3B00B4000B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		844CF8CE2717F23F00B178AE /* Deal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
+		844CF8D22717F42900B178AE /* DealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 				7AC6CFA82717F9FE00B4000B /* Beacon.swift */,
 				7AC6CFA32717EA8C00B4000B /* BeaconBrowser.swift */,
 				7AC6CF822717DB5F00B4000B /* BeaconAdvertiser.swift */,
+				844CF8CE2717F23F00B178AE /* Deal.swift */,
+				844CF8D22717F42900B178AE /* DealDetail.swift */,
 				7AC6CEE72717C5B700B4000B /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -438,6 +444,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AC6CF832717DB5F00B4000B /* BeaconAdvertiser.swift in Sources */,
+				844CF8D32717F42900B178AE /* DealDetail.swift in Sources */,
+				844CF8CF2717F24000B178AE /* Deal.swift in Sources */,
 				7AC6CF0F2717C5B800B4000B /* ContentView.swift in Sources */,
 				7AC6CFA92717F9FE00B4000B /* Beacon.swift in Sources */,
 				7AC6CFA42717EA8C00B4000B /* BeaconBrowser.swift in Sources */,
