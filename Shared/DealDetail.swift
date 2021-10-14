@@ -13,18 +13,20 @@ struct DealDetail : View {
     var image: String
 
     var body: some View {
-        VStack {
-            Image(image)
-                .resizable()
-                .scaledToFit()
-            Text(name)
-                .font(.title)
-            Divider()
-            Text(description)
-                .font(.headline)
-                .multilineTextAlignment(.center)
-                .lineLimit(50)
-            }.padding().navigationBarTitle(Text(name), displayMode: .inline)
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack {
+                Image(image)
+                    .resizable()
+                    .scaledToFit()
+                Text(name)
+                    .font(.title)
+                Divider()
+                Text(description)
+                    .font(.headline)
+                    .multilineTextAlignment(.center)
+                    .lineLimit(50)
+                }.padding().navigationBarTitle(Text(name), displayMode: .inline)
+        }
     }
 }
 

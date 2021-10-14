@@ -30,6 +30,8 @@
 		7AC6CFAA2717F9FE00B4000B /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CFA82717F9FE00B4000B /* Beacon.swift */; };
 		7AC6CFAB2717F9FE00B4000B /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CFA82717F9FE00B4000B /* Beacon.swift */; };
 		7AC6CFAD2717FE3B00B4000B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6CFAC2717FE3B00B4000B /* ContentView.swift */; };
+		7AC6CFAE2718069A00B4000B /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CF8CE2717F23F00B178AE /* Deal.swift */; };
+		7AC6CFAF2718069C00B4000B /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CF8CE2717F23F00B178AE /* Deal.swift */; };
 		844CF8CF2717F24000B178AE /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CF8CE2717F23F00B178AE /* Deal.swift */; };
 		844CF8D32717F42900B178AE /* DealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CF8D22717F42900B178AE /* DealDetail.swift */; };
 /* End PBXBuildFile section */
@@ -460,6 +462,7 @@
 				7AC6CF842717DB5F00B4000B /* BeaconAdvertiser.swift in Sources */,
 				7AC6CF102717C5B800B4000B /* ContentView.swift in Sources */,
 				7AC6CFAA2717F9FE00B4000B /* Beacon.swift in Sources */,
+				7AC6CFAE2718069A00B4000B /* Deal.swift in Sources */,
 				7AC6CFA52717EA8C00B4000B /* BeaconBrowser.swift in Sources */,
 				7AC6CF0E2717C5B800B4000B /* _SApp.swift in Sources */,
 			);
@@ -489,6 +492,7 @@
 			files = (
 				7AC6CFA22717E8F500B4000B /* BeaconAdvertiser.swift in Sources */,
 				7AC6CFAD2717FE3B00B4000B /* ContentView.swift in Sources */,
+				7AC6CFAF2718069C00B4000B /* Deal.swift in Sources */,
 				7AC6CF812717D9BA00B4000B /* _SApp.swift in Sources */,
 				7AC6CFAB2717F9FE00B4000B /* Beacon.swift in Sources */,
 			);
