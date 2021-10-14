@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7AC6CF552717D93200B4000B"
-               BuildableName = "6S.app"
+               BuildableName = "6S (tvOS).app"
                BlueprintName = "6S (tvOS)"
                ReferencedContainer = "container:6S.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7AC6CF642717D93300B4000B"
-               BuildableName = "6STests.xctest"
+               BuildableName = "6STests tvOS.xctest"
                BlueprintName = "6STests tvOS"
                ReferencedContainer = "container:6S.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7AC6CF552717D93200B4000B"
-            BuildableName = "6S.app"
+            BuildableName = "6S (tvOS).app"
             BlueprintName = "6S (tvOS)"
             ReferencedContainer = "container:6S.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7AC6CF552717D93200B4000B"
-            BuildableName = "6S.app"
+            BuildableName = "6S (tvOS).app"
             BlueprintName = "6S (tvOS)"
             ReferencedContainer = "container:6S.xcodeproj">
          </BuildableReference>
