@@ -55,7 +55,7 @@ struct DealCell : View {
                 .frame(width: 80, height: 80)
                 .cornerRadius(40)
             VStack(alignment: .leading) {
-                Text(deal.name)
+                Text(deal.name).font(.body)
             }
         }
     }
